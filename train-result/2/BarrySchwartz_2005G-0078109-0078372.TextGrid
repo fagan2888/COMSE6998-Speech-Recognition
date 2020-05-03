@@ -1,0 +1,148 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.0
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.0
+		intervals: size = 9
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.380
+				text = ""
+			intervals [2]:
+				xmin = 0.380
+				xmax = 0.520
+				text = "he"
+			intervals [3]:
+				xmin = 0.520
+				xmax = 0.650
+				text = "had"
+			intervals [4]:
+				xmin = 0.650
+				xmax = 0.850
+				text = "no"
+			intervals [5]:
+				xmin = 0.850
+				xmax = 1.120
+				text = "idea"
+			intervals [6]:
+				xmin = 1.120
+				xmax = 1.280
+				text = "what"
+			intervals [7]:
+				xmin = 1.280
+				xmax = 1.490
+				text = "that"
+			intervals [8]:
+				xmin = 1.490
+				xmax = 1.970
+				text = "was"
+			intervals [9]:
+				xmin = 1.970
+				xmax = 3.0
+				text = ""
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.0
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.000
+				xmax = 0.380
+				text = "sil"
+			intervals [2]:
+				xmin = 0.380
+				xmax = 0.450
+				text = "HH_B"
+			intervals [3]:
+				xmin = 0.450
+				xmax = 0.520
+				text = "IY_E"
+			intervals [4]:
+				xmin = 0.520
+				xmax = 0.550
+				text = "HH_B"
+			intervals [5]:
+				xmin = 0.550
+				xmax = 0.610
+				text = "AE_I"
+			intervals [6]:
+				xmin = 0.610
+				xmax = 0.650
+				text = "D_E"
+			intervals [7]:
+				xmin = 0.650
+				xmax = 0.710
+				text = "N_B"
+			intervals [8]:
+				xmin = 0.710
+				xmax = 0.850
+				text = "OW_E"
+			intervals [9]:
+				xmin = 0.850
+				xmax = 0.930
+				text = "AY_B"
+			intervals [10]:
+				xmin = 0.930
+				xmax = 1.010
+				text = "D_I"
+			intervals [11]:
+				xmin = 1.010
+				xmax = 1.060
+				text = "IY_I"
+			intervals [12]:
+				xmin = 1.060
+				xmax = 1.120
+				text = "AH_E"
+			intervals [13]:
+				xmin = 1.120
+				xmax = 1.180
+				text = "W_B"
+			intervals [14]:
+				xmin = 1.180
+				xmax = 1.230
+				text = "AH_I"
+			intervals [15]:
+				xmin = 1.230
+				xmax = 1.280
+				text = "T_E"
+			intervals [16]:
+				xmin = 1.280
+				xmax = 1.330
+				text = "DH_B"
+			intervals [17]:
+				xmin = 1.330
+				xmax = 1.430
+				text = "AE_I"
+			intervals [18]:
+				xmin = 1.430
+				xmax = 1.490
+				text = "T_E"
+			intervals [19]:
+				xmin = 1.490
+				xmax = 1.540
+				text = "W_B"
+			intervals [20]:
+				xmin = 1.540
+				xmax = 1.770
+				text = "AO_I"
+			intervals [21]:
+				xmin = 1.770
+				xmax = 1.970
+				text = "Z_E"
+			intervals [22]:
+				xmin = 1.970
+				xmax = 2.980
+				text = "sp"
+			intervals [23]:
+				xmin = 2.980
+				xmax = 3.0
+				text = ""
