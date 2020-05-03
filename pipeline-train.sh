@@ -3,7 +3,6 @@ pip3 install -r python-requirements.txt
 
 echo "[INFO] remove previous data"
 rm -rf segmented_audio/*
-rm -rf model/*
 rm -rf org_audio/*
 rm -rf train-result/*
 rm text
