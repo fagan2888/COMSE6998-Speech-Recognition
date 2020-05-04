@@ -21,7 +21,13 @@ checkAudioSet = []
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 sys.stderr.write('[INFO %s] collecting all segments\n' % now)
 for line in file.readlines():
-    audio_name, seg_start, seg_end = line.split(' ')[0].split('-')
+    try:
+        audio_name, seg_start, seg_end = line.split(' ')[0].split('-')
+    except (ValueError, IndexError) as e:
+        now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        sys.stderr.write('[WARNING %s] cannot decode successfully -> %s\n' % (now, line))
+        continue
+        
     audio_path = currentPath + '/org_audio/' + audio_name + '.wav'
     
     if scriptDict.get(audio_path) is None:
@@ -38,6 +44,8 @@ for line in file.readlines():
             'lab_name': line.split(' ')[0] + '.lab'
         }
     except IndexError:
+        now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        sys.stderr.write('[WARNING %s] cannot decode successfully -> %s\n' % (now, line))
         continue
     checkAudioSet.append(audio_path)
     
