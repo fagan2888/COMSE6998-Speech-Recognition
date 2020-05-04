@@ -2,6 +2,7 @@ import os
 import sys
 import glob
 import shutil
+import datetime
 from tqdm import tqdm
 from multiprocessing import Pool
 
@@ -17,10 +18,11 @@ except OSError:
 
 
 # combining tedlium scp
-sys.stderr.write('[INFO] start combining tedlium scp\n')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+sys.stderr.write('[INFO %s] start combining tedlium scp\n' % now)
 collectScp = []
 for scp in  glob.glob(currentPath + '/kaldi-scp/*.scp'):
-    sys.stderr.write('[INFO] %s\n' % scp)
+    sys.stderr.write('[INFO %s] %s\n' % (now, scp))
     collectScp.append(scp.split('kaldi-scp/')[1].split('-wav')[0])
 
     f = open(scp, 'r')
@@ -35,10 +37,12 @@ for scp in  glob.glob(currentPath + '/kaldi-scp/*.scp'):
 
 
 # prepare combined text
-sys.stderr.write('[INFO] start combining tedlium audio text\n')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+sys.stderr.write('[INFO %s] start combining tedlium audio text\n' % now)
 text_path = currentPath + "/kaldi/egs/tedlium/s5_r3/data/%s/text"
 for i in collectScp:
-    sys.stderr.write('[INFO] processing %s text\n' % i)
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    sys.stderr.write('[INFO %s] processing %s text\n' % (now, i))
     f = open(text_path % i, 'r')
     data = f.read()
 
@@ -47,7 +51,8 @@ for i in collectScp:
 
 
 # convert sph to wav parallelly 
-sys.stderr.write('[INFO] start converting sph to wav parallelly\n')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+sys.stderr.write('[INFO %s] start converting sph to wav parallelly\n' % now)
 def run_sh(sh_command):
     os.system(sh_command)
     pbar.update(1)

@@ -1,6 +1,7 @@
 import os
 import sys
 import glob
+import datetime
 import shutil
 import numpy as np
 from tqdm import tqdm
@@ -17,7 +18,8 @@ scriptDict = {}
 checkAudioSet = []
 
 
-sys.stderr.write('[INFO] collecting all segments\n')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+sys.stderr.write('[INFO %s] collecting all segments\n' % now)
 for line in file.readlines():
     audio_name, seg_start, seg_end = line.split(' ')[0].split('-')
     audio_path = currentPath + '/org_audio/' + audio_name + '.wav'
@@ -41,7 +43,8 @@ for line in file.readlines():
     
     
 
-sys.stderr.write('[INFO] segmenting files\n')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+sys.stderr.write('[INFO %s] segmenting files\n' % now)
 if set(checkAudioSet) == set(wavList):
     i = 1
     
