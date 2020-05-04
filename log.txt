@@ -1,0 +1,241 @@
+[INFO] install python packages
+Requirement already satisfied: praat-textgrids in ./.local/lib/python3.6/site-packages (from -r python-requirements.txt (line 1))
+Requirement already satisfied: pydub in ./.local/lib/python3.6/site-packages (from -r python-requirements.txt (line 2))
+Requirement already satisfied: multiprocess in /usr/local/lib/python3.6/dist-packages (from -r python-requirements.txt (line 3))
+Requirement already satisfied: tqdm in ./.local/lib/python3.6/site-packages (from -r python-requirements.txt (line 4))
+Requirement already satisfied: numpy in ./.local/lib/python3.6/site-packages (from -r python-requirements.txt (line 5))
+Requirement already satisfied: dill>=0.3.1 in /usr/local/lib/python3.6/dist-packages (from multiprocess->-r python-requirements.txt (line 3))
+[INFO] remove previous data
+[INFO] prepare dataset
+[INFO] train and align
+Setting up corpus information...
+1 wav file(s) were ignored because neither a .lab file or a .TextGrid file could be found, please see /home/r50206v/Documents/MFA/segmented_audio/logging/corpus.log for more information
+Creating dictionary information...
+Setting up training data...
+Calculating MFCCs...
+Calculating CMVN...
+Number of speakers in corpus: 35, average number of utterances per speaker: 97.05714285714286
+Beginning monophone training...
+skipped transitions 1147 1515
+missing data gaussians 16
+skipped transitions 1146 1515
+missing data gaussians 16
+skipped transitions 1149 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+skipped transitions 1148 1515
+missing data gaussians 16
+Initializing triphone training...
+Beginning triphone training...
+skipped transitions 9400 12503
+missing data gaussians 5
+skipped transitions 9399 12503
+missing data gaussians 4
+skipped transitions 9399 12503
+missing data gaussians 4
+skipped transitions 9399 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 3
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+skipped transitions 9398 12503
+missing data gaussians 4
+Initializing speaker-adapted triphone training...
+Beginning speaker-adapted triphone training...
+log-likelihood -92.3009
+skipped transitions 8279 10971
+missing data gaussians 15
+log-likelihood -92.4549
+skipped transitions 8279 10971
+missing data gaussians 15
+log-likelihood -92.2334
+skipped transitions 8279 10971
+missing data gaussians 15
+log-likelihood -92.2586
+skipped transitions 8279 10971
+missing data gaussians 15
+log-likelihood -91.8764
+skipped transitions 8283 10971
+missing data gaussians 16
+log-likelihood -91.6653
+skipped transitions 8283 10971
+missing data gaussians 16
+log-likelihood -91.3226
+skipped transitions 8283 10971
+missing data gaussians 16
+log-likelihood -90.9828
+skipped transitions 8283 10971
+missing data gaussians 16
+log-likelihood -90.6521
+skipped transitions 8283 10971
+missing data gaussians 16
+log-likelihood -90.2935
+skipped transitions 8283 10971
+missing data gaussians 15
+log-likelihood -89.9242
+skipped transitions 8283 10971
+missing data gaussians 15
+log-likelihood -89.7162
+skipped transitions 8283 10971
+missing data gaussians 15
+log-likelihood -89.4423
+skipped transitions 8283 10971
+missing data gaussians 15
+log-likelihood -89.1925
+skipped transitions 8283 10971
+missing data gaussians 15
+log-likelihood -88.9192
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -88.6338
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -88.4015
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -88.1752
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.959
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.7351
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.5052
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.3214
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.1639
+skipped transitions 8284 10971
+missing data gaussians 15
+log-likelihood -87.0093
+skipped transitions 8284 10971
+missing data gaussians 15
+[INFO] model is trained
