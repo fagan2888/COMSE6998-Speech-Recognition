@@ -17,6 +17,6 @@ python3 prepare_data.py
 
 now=$(date +"%Y-%m-%d %T")
 echo "[INFO $now] train and align"
-~/montreal-forced-aligner/bin/mfa_train_and_align ~/segmented_audio ~/kaldi/egs/tedlium/s5_r3/data/local/lang_nosp/align_lexicon.txt ~/train-result -c -v -o ~/model
+~/montreal-forced-aligner/bin/mfa_train_and_align ~/segmented_audio ~/kaldi/egs/tedlium/s5_r3/data/local/lang_nosp/align_lexicon.txt ~/train-result -c -v -o ~/model -j 8
 now=$(date +"%Y-%m-%d %T")
 echo "[INFO $now] model is trained"
