@@ -8,6 +8,8 @@ background music: [piano music played by Tim Shevlyakov](https://www.youtube.com
 
 rock music: [Always there for you](https://archive.org/details/ClassicRockMusic80s90s/Always+there+for+you.mp3)
 
+country music: [Mama tried](https://archive.org/details/OlderCountryMusic80sAnd90s/Mama+Tried.mp3)
+
 training set: [tedlium s5_r3](https://www.openslr.org/51/)
 
 *note* `kaldi-scp/*.scp` comes from `kaldi/egs/tedlium/s5_r3/data/train`, `kaldi/egs/tedlium/s5_r3/data/test`, and `kaldi/egs/tedlium/s5_r3/data/dev`
