@@ -10,6 +10,8 @@ rock music: [Always there for you](https://archive.org/details/ClassicRockMusic8
 
 training set: [tedlium s5_r3](https://www.openslr.org/51/)
 
-*note* kaldi-scp/*.scp come from `kaldi/egs/tedlium/s5_r3/data/train`, `kaldi/egs/tedlium/s5_r3/data/test`, and `kaldi/egs/tedlium/s5_r3/data/dev`
+*note* `kaldi-scp/*.scp` comes from `kaldi/egs/tedlium/s5_r3/data/train`, `kaldi/egs/tedlium/s5_r3/data/test`, and `kaldi/egs/tedlium/s5_r3/data/dev`
+
+*note* `text` comes from `kaldi/egs/tedlium/s5_r3/data/train/text`, `kaldi/egs/tedlium/s5_r3/data/dev/text`, and `kaldi/egs/tedlium/s5_r3/data/test/text`
 
 *note* only partial data (under `org_audio`, `segmented_audio`, `train-result` and `text`) are uploaded, please use run `kaldi/egs/tedlium/s5_r3/run.sh` to get the full dataset, and run `prepare_convert_to_wav.py` to convert wav from sph files
