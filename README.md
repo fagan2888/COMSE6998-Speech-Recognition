@@ -12,6 +12,8 @@ country music: [Mama tried](https://archive.org/details/OlderCountryMusic80sAnd9
 
 training set: [tedlium s5_r3](https://www.openslr.org/51/)
 
+*note* `lexicon dictionary` comes from `kaldi/egs/tedlium/s5_r3/data/local/lang_nosp/align_lexicon.txt`
+
 *note* `kaldi-scp/*.scp` comes from `kaldi/egs/tedlium/s5_r3/data/train`, `kaldi/egs/tedlium/s5_r3/data/test`, and `kaldi/egs/tedlium/s5_r3/data/dev`
 
 *note* `text` comes from `kaldi/egs/tedlium/s5_r3/data/train/text`, `kaldi/egs/tedlium/s5_r3/data/dev/text`, and `kaldi/egs/tedlium/s5_r3/data/test/text`
